@@ -7,7 +7,7 @@ let db = new sqlite3.Database(DBSOURCE, (err) => {
       console.error(err.message)
       throw err
     }else{
-        console.log('Connected to the SQLite database.')
+        console.log('Conectado a la base de datos de SQLite.')
         db.run(`CREATE TABLE videogames (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             title text UNIQUE, 
